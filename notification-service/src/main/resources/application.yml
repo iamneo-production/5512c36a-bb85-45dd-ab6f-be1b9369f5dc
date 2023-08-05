@@ -23,5 +23,5 @@ eureka:
         prefer-ip-address: true
 
 mail:
-    id: rotatedsortedarray@gmail.com
-    password: jzqhahmnydkwkgcv
+    id: 
+    password: 
