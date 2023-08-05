@@ -1,0 +1,23 @@
+server:
+    port: 8081
+spring:
+    application:
+        name: NOTIFICATION-SERVICE
+    datasource:
+        url: jdbc:mysql://127.0.0.1:3306/notiservice
+        username: root
+        password: examly
+        driverClassName: com.mysql.cj.jdbc.Driver
+    jpa:
+        hibernate:
+            ddl-auto: update
+            show-sql: true
+
+eureka:
+    client:
+        register-with-eureka: true
+        fetch-registry: true
+        service-url:
+            defaultZone: http://localhost:8080/eureka
+    instance:
+        prefer-ip-address: true
