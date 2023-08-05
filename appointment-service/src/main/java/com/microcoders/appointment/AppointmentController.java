@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
+import java.util.List;
 import com.microcoders.appointment.dto.AppointmentModel;
 import com.microcoders.appointment.service.AppointmentService;
 
@@ -27,4 +27,8 @@ public class AppointmentController {
 		return appointmentService.getDetails(patientId);
 	}
 	
+	@GetMapping("/appointment/details")
+	public List<AppointmentModel> getAppointmentDetails(){
+		return appointmentService.getAppointments();
+	}
 }

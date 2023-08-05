@@ -1,6 +1,8 @@
 package com.microcoders.appointment.service;
 
 import java.security.SecureRandom;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +14,6 @@ import com.microcoders.appointment.model.PatientEntity;
 import com.microcoders.appointment.repository.AppointmentRepository;
 import com.microcoders.appointment.repository.PatientRepository;
 import com.microcoders.appointment.util.AppointmentUtil;
-
 @Service
 public class AppointmentService {
 
@@ -54,5 +55,17 @@ public class AppointmentService {
 	
 	public String generatePatientId() {
 		return AppointmentUtil.randomNanoId(DEFAULT_NUMBER_GENERATOR, CUSTOM_ALPHABET, 6);
+	}
+
+	public List<AppointmentModel> getAppointments(){
+		List<AppointmentDetailsEntity> appointments = appointmentRepo.findAll();
+		List<AppointmentModel> modelDetails = new ArrayList<>();
+		AppointmentModel model;
+		for(AppointmentDetailsEntity entity:appointments){
+			model = new AppointmentModel();
+			BeanUtils.copyProperties(entity,model);
+			modelDetails.add(model);
+		}
+		return modelDetails;
 	}
 }
