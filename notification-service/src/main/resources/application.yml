@@ -21,3 +21,7 @@ eureka:
             defaultZone: http://localhost:8080/eureka
     instance:
         prefer-ip-address: true
+
+mail:
+    id: rotatedsortedarray@gmail.com
+    password: jzqhahmnydkwkgcv
