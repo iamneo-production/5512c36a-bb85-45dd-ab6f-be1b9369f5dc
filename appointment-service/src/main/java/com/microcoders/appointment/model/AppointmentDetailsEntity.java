@@ -23,7 +23,7 @@ public class AppointmentDetailsEntity {
 	private String department;
 	
 	@ManyToOne
-	@JoinColumn(name="PATIENT_ID",nullable=false)
+	@JoinColumn(name="PATIENT_ID",referencedColumnName = "patientId",nullable=false)
 	private PatientEntity patient;
 
 	public Long getId() {

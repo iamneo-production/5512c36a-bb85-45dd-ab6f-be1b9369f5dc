@@ -1,6 +1,6 @@
 package com.microcoders.appointment.dto;
 
-public class AppointmentRequest {
+public class AppointmentModel {
 
 	private String patientId;
 
