@@ -64,6 +64,7 @@ public class AppointmentService {
 		for(AppointmentDetailsEntity entity:appointments){
 			model = new AppointmentModel();
 			BeanUtils.copyProperties(entity,model);
+			model.setPatientId(entity.getPatient().getPatientId());
 			modelDetails.add(model);
 		}
 		return modelDetails;
