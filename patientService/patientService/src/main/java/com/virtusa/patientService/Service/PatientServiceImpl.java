@@ -31,7 +31,6 @@ public class PatientServiceImpl implements PatientService {
     public List<Patient> getAllPatients() {
         return patientRepository.findAll();
     }
-
     
 }
 
