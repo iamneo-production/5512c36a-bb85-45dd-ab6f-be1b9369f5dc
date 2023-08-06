@@ -1,8 +1,8 @@
 server:
-    port: 8081
+    port: 8082
 spring:
     application:
-        name: NOTIFICATION-SERVICE
+        name: REMINDER-SERVICE
     datasource:
         url: jdbc:mysql://127.0.0.1:3306/notiservice
         username: root
@@ -21,7 +21,3 @@ eureka:
             defaultZone: http://localhost:8080/eureka
     instance:
         prefer-ip-address: true
-
-mail:
-    id: rotatedsortedarray@gmail.com
-    password: jzqhahmnydkwkgcv
