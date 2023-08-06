@@ -1,0 +1,7 @@
+/home/coder/project/workspace/reminder-service/src/main/java/com/microcoders/reminderservice/dto/AppointmentDetailsDto.java
+/home/coder/project/workspace/reminder-service/src/main/java/com/microcoders/reminderservice/config/Config.java
+/home/coder/project/workspace/reminder-service/src/main/java/com/microcoders/reminderservice/ReminderServiceApplication.java
+/home/coder/project/workspace/reminder-service/src/main/java/com/microcoders/reminderservice/service/ReminderService.java
+/home/coder/project/workspace/reminder-service/src/main/java/com/microcoders/reminderservice/service/ReminderServiceImpl.java
+/home/coder/project/workspace/reminder-service/src/main/java/com/microcoders/reminderservice/dto/EmailDto.java
+/home/coder/project/workspace/reminder-service/src/main/java/com/microcoders/reminderservice/dto/SmsDto.java
