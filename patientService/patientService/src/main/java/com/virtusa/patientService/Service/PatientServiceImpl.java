@@ -32,7 +32,7 @@ public class PatientServiceImpl implements PatientService {
         return patientRepository.findAll();
     }
 
-    // Implement other patient-related methods using the repository
+    
 }
 
 
