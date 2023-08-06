@@ -3,23 +3,15 @@ package com.microcoders.appointment.dto;
 public class AppointmentModel {
 
 	private String patientId;
-
 	private String name;
-
 	private Long age;
-
 	private String phone;
-
 	private String gender;
-
 	private String email;
-
 	private String datetime;
-
 	private String department;
-	
 	private boolean newuser;
-
+	
 	public String getPatientId() {
 		return patientId;
 	}
